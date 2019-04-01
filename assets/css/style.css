@@ -310,7 +310,7 @@ nav[data-toggle="toc"] {
   margin-top: 115px;
   padding-bottom: 15px;
 }
-nav[data-toggle=toc] .nav>li>a{font-family: "Montserrat", sans-serif; font-size: 11px; padding: 4px 15px;}
+nav[data-toggle=toc] .nav>li>a{font-family: "Montserrat", sans-serif; font-size: 11px; padding: 4px 13px;}
 @-moz-document url-prefix(){ 
 	nav[data-toggle=toc] .nav>li>a {font-weight: 300 !important;}
 	.btn-fullscreen{font-weight: 300 !important;}
@@ -378,6 +378,12 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
   .figure-box-widget .figure-box {
     min-height: 86px;
   }
+	.tbl-content-hd{padding-left: 8px !important;}
+	nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:focus, nav[data-toggle=toc] .nav-link.active:hover{padding-left: 6px;}
+	nav[data-toggle=toc] .nav>li>a{font-size: 9px; padding: 4px 8px;}
+	.data-explorer table{font-size: 0.8rem;}
+	.cookie-panel .btn-custom{height: auto;}
+	.pbimapFiltersDiv .pbimapDropdownPaddingDiv{background-color: transparent;}
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -425,6 +431,8 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     font-size: 17px;
     min-height: 175px;
   }
+  .allocation-overview{top: 303px !important;}
+  .cookie-panel .btn-custom{height: auto}
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
@@ -489,7 +497,7 @@ nav[data-toggle=toc] .nav > li > a:focus, nav[data-toggle=toc] .nav > li > a:hov
 
 .tbl-content-hd {
   font-size: 13px;
-  padding-left: 15px;
+  padding-left: 13px;
   font-weight: bold;
   color: #545454;
 }
@@ -775,7 +783,7 @@ a.cd-footer-social__link:focus .hover-style, a.cd-footer-social__link:hover .hov
 }
 
 .allocation-overview{position: absolute; top: 255px;}
-.allocation-overview img{border:1px solid #d4dadc}
+.allocation-overview img{border:1px solid #d4dadc; width:100%;}
 .allocation-overview span{background:#5392cb; border:1px solid #5392cb; font-size: 11px; text-align: center; color:#fff; display: block; padding: 2px 5px; transition: .3s ease-out;}
 .allocation-overview a:hover {text-decoration: none}
 .allocation-overview a:hover span{color:#fff; text-decoration: none; border:1px solid #32659a; background:#32659a;}
