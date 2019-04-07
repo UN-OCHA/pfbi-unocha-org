@@ -57,22 +57,22 @@ fetch('https://cbpfapi.unocha.org/vo2/odata/CBPFSummary?allocationYear='+ yearTo
         //$div1_.textContent = JSON.stringify(data);
         var obj = data;
 		if($donors_ != null)
-        $donors_.textContent = obj.value[0].donors;
+        $donors_.textContent = obj.donors;
 	
 	if($partnersFunded_ != null)
-    	$partnersFunded_.textContent = obj.value[0].partnersFunded;
+    	$partnersFunded_.textContent = obj.partnersFunded;
 	
 	if($projects_ != null)
-        $projects_.textContent = obj.value[0].projectsFunded;
+        $projects_.textContent = obj.projectsFunded;
 	
 	if($contributions_ != null)
-        $contributions_.textContent = '$'+ formatNumber(obj.value[0].contribTotalAmt);
+        $contributions_.textContent = '$'+ formatNumber(obj.contribTotalAmt);
 	
 	if($allocations_ != null)
-        $allocations_.textContent = '$'+ formatNumber(obj.value[0].allocAmt);
+        $allocations_.textContent = '$'+ formatNumber(obj.allocAmt);
 	
 	if($underApproval_ != null)
-        $underApproval_.textContent = '$'+ formatNumber(obj.value[0].underApprovalAmt);
+        $underApproval_.textContent = '$'+ formatNumber(obj.underApprovalAmt);
       });
     } else console.log('Network response was not ok.');
   })

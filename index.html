@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/smoothproducts.css">	
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/breaking-news-ticker.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -70,7 +71,7 @@
 				<div id="block-system-user-menu" class="block block-system block-menu">
 					<div class="content">
 						<ul class="menu">
-							<li class="first last leaf"><a href="http://gms.unocha.org/bi" target="_blank" title="Old CBPF BI">Old CBPF BI</a></li>
+							<li class="first last leaf"><a href="http://gms.unocha.org/bi" target="_blank" title="Initial CBPF BI">Initial CBPF BI</a></li>
 						</ul> 			
 					</div>
 				</div>
@@ -93,7 +94,7 @@
                 </div>
         </div>
     </nav>
-<section class="clean-block clean-hero" style="background-image: url(https://imsdau-v2.bss.design/assets/img/2019GHO_Nigeria.png?h=d81da02254654ecc8d12e3a5f9fde61a);color: rgba(0,0,0,0.40);min-height: 350px;background-size: cover; background-color: rgba(0,0,0,0.75);">
+<section class="clean-block clean-hero" style="background-image: url(assets/img/2019GHO_Nigeria_header.jpg);color: rgba(0,0,0,0.40);min-height: 350px;background-size: cover; background-color: rgba(0,0,0,0.75);">
 	<div class="text" style="width: 100%;max-width: 1140px;padding-top: 50px;padding-bottom: 20px;">
 		<h2 data-toc-skip style="margin-bottom: 10px; font-size: 34px">
 			<br>
@@ -129,7 +130,7 @@
 							<div class="figure-box">
 								<b id="projectsFig">-</b> Projects																					
 							</div>
-							<div class="figure-desc-box">Increased number of projects displays the increased impact on the groud targeting wider beneficiaries in need</div>
+							<div class="figure-desc-box">Increased number of projects displays the increased impact on the ground targeting wider affected people in need</div>
 						</div>
 					</a>
 				</div>
@@ -149,7 +150,7 @@
 							<div class="figure-box">
 								<b id="allocationFig">-</b> Allocated																					
 							</div>
-							<div class="figure-desc-box">Regular and timely allocations through Standard and Reerve mechanisms allow CBPF to priortise the funding to the unreached beneficiaries with quick response</div>
+							<div class="figure-desc-box">Regular and timely allocations through Standard and Reserve mechanisms allow CBPF to priortise the funding to the unreached affected people with quick response</div>
 						</div>
 					</a>
 				</div>
@@ -159,7 +160,7 @@
 							<div class="figure-box">
 								<b id="underApprovalFig">-</b> Under Approval																					
 							</div>
-							<div class="figure-desc-box">Regular and timely allocations through Standard and Reerve mechanisms allow CBPF to priortise the funding to the unreached beneficiaries with quick response</div>
+							<div class="figure-desc-box">Regular and timely allocations through Standard and Reserve mechanisms allow CBPF to priortise the funding to the unreached affected people with quick response</div>
 						</div>
 					</a>
 				</div>
@@ -169,11 +170,31 @@
 			</div>
 		</div>
 	</section>
+	<section class="bg-grey-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breaking-news-ticker" id="newsTicker3">
+						<!--<div class="bn-label">Latest Updates</div>-->
+						<div class="bn-news">
+							<ul>
+								<li><span class="bn-prefix"><b>Allocations Overview:</b></span><a href="allocations-overview.html" target="_blank"> Click here to find more about CBPF regions</a></li>
+							</ul>
+						</div>
+						<div class="bn-controls">
+							<button><span class="bn-arrow bn-prev"></span></button>
+							<button><span class="bn-arrow bn-next"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
     <div>
-        <div class="container">
+        <div class="container">			
             <div class="row">
                 <div class="col-md-10 col-lg-10 col-xl-10">
-                    <main class="page landing-page" style="margin-top: 20px;">
+                    <main class="page landing-page">						
                         <section class="clean-block slider dark" style="background-color: rgb(255,255,255);margin-top: 50px;">
                             <div class="container">
                                 <div class="row">
@@ -391,14 +412,14 @@
                                     <div class="col">
                                         <div class="block-heading">
                                             <div id="anchor-6"></div>
-                                            <h2 class="text-info" id="clustertrend_heading">BENEFICIARY TRENDS</h2>
-                                        </div><div id="d3chartcontainerpbiobe" data-title="Beneficiary Overview" data-cbpf="all" data-year="2018" data-responsive="true" data-lazyload="true"></div><script type="text/javascript" src="https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe.js"></script>
+                                            <h2 class="text-info" id="clustertrend_heading">AFFECTED PERSONS TRENDS</h2>
+                                        </div><div id="d3chartcontainerpbiobe" data-title="Affected Persons Overview" data-cbpf="all" data-year="2018" data-responsive="true" data-lazyload="true"></div><script type="text/javascript" src="https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe.js"></script>
 										<div class="text-center"><button class="btn-fullscreen" data-toggle="modal" data-target=".bd-example7-modal-lg">See the chart in full-screen mode</button></div>
 										<div class="modal fade bd-example7-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 										  <div class="modal-dialog" role="document">
 											<div class="modal-content">
 											  <div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Beneficiary Trends</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Affected Persons Trends</h5>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												  <span aria-hidden="true">&times;</span>
 												</button>
@@ -443,7 +464,40 @@
         		<div class="col-12 justify-content-center align-content-center">
             	<h2 class="text-center" data-toc-skip style="margin: 25px 0; font-weight: 600;">CBPF Donors</h2>			
 				<ul class="donor-flags-list">
-					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Australia.png" width="30px" alt="">
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Andorra.png" width="30px">Andorra</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Australia.png" width="30px">Australia</li>						
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Belgium.png" width="30px">Belgium</li>	
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Canada.png" width="30px">Canada</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Colombia.png" width="30px">Colombia</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Cyprus.png" width="30px">Cyprus</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Denmark.png" width="30px">Denmark</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Estonia.png" width="30px">Estonia</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/France.png" width="30px">France</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Germany.png" width="30px">Germany</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Iceland.png" width="30px">Iceland</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Ireland.png" width="30px">Ireland</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Italy.png" width="30px">Italy</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Korea%2C%20Republic%20of.png" width="30px">Korea, Republic of</li><li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Kuwait.png" width="30px">Kuwait</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Lithuania.png" width="30px">Lithuania</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Luxembourg.png" width="30px">Luxembourg</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Malaysia.png" width="30px">Malaysia</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Malta.png" width="30px">Malta</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Monaco.png" width="30px">Monaco</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Netherlands.png" width="30px">Netherlands</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/New%20Zealand.png" width="30px">New Zealand</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Norway.png" width="30px">Norway</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Philippines.png" width="30px">Philippines</li>	
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Portugal.png" width="30px">Portugal</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Qatar.png" width="30px">Qatar</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Saudi%20Arabia.png" width="30px">Saudi Arabia</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Spain.png" width="30px">Spain</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Sweden.png" width="30px">Sweden</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Switzerland.png" width="30px">Switzerland</li>	
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20Arab%20Emirates.png" width="30px">United Arab Emirates</li>
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20Kingdom.png" width="30px">United Kingdom</li>	
+					<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20States.png" width="30px">United States</li>
+					
+					<!--<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Australia.png" width="30px" alt="">
 					Australia
 					</li><li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Belgium.png" width="30px" alt="">
 					Belgium
@@ -493,7 +547,7 @@
 					United Kingdom
 					</li><li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20States.png" width="30px" alt="">
 					United States
-					</li>
+					</li>-->
 					<div style="clear: both"></div>
 				</ul>			
 				</div>
@@ -632,6 +686,7 @@
     <script src="assets/js/respond.js"></script>
     <script src="assets/js/theme.js"></script>	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+	<script src="assets/js/breaking-news-ticker.min.js"></script>
 	<script type="text/javascript">
 	var d= new Date();
 	var currentyear = d.getFullYear();
@@ -669,6 +724,11 @@
             $('#scroll').fadeOut(); 
         } 
     }); 
+	$('#newsTicker3').breakingNews({
+				themeColor: '#f9a828',
+				effect: 'slide-left'
+			});
+
     $('#scroll').click(function(){ 
         $("html, body").animate({ scrollTop: 0 }, 600); 
         return false; 
@@ -772,22 +832,22 @@
         //$div1_.textContent = JSON.stringify(data);
         var obj = data;
 		if($donors_ != null)
-        $donors_.textContent = obj.value[0].donors;
+        $donors_.textContent = obj.donors;
 	
 	if($partnersFunded_ != null)
-    	$partnersFunded_.textContent = obj.value[0].partnersFunded;
+    	$partnersFunded_.textContent = obj.partnersFunded;
 	
 	if($projects_ != null)
-        $projects_.textContent = obj.value[0].projectsFunded;
+        $projects_.textContent = obj.projectsFunded;
 	
 	if($contributions_ != null)
-        $contributions_.textContent = '$'+ formatNumber(obj.value[0].contribTotalAmt);
+        $contributions_.textContent = '$'+ formatNumber(obj.contribTotalAmt);
 	
 	if($allocations_ != null)
-        $allocations_.textContent = '$'+ formatNumber(obj.value[0].allocAmt);
+        $allocations_.textContent = '$'+ formatNumber(obj.allocAmt);
 	
 	if($underApproval_ != null)
-        $underApproval_.textContent = '$'+ formatNumber(obj.value[0].underApprovalAmt);
+        $underApproval_.textContent = '$'+ formatNumber(obj.underApprovalAmt);
       });
     } else console.log('Network response was not ok.');
 	
