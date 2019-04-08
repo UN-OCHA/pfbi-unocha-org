@@ -431,7 +431,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     font-size: 17px;
     min-height: 175px;
   }
-  .allocation-overview{top: 303px !important;}
+  .allocation-overview{top: 319px !important;}
   .cookie-panel .btn-custom{height: auto}
 }
 
@@ -788,7 +788,7 @@ a.cd-footer-social__link:focus .hover-style, a.cd-footer-social__link:hover .hov
 	.cd-footer-copyright svg {margin: 0 0 0 20px;}
 }
 
-.allocation-overview{position: absolute; top: 255px;}
+.allocation-overview{position: absolute; top: 271px;}
 .allocation-overview img{border:1px solid #d4dadc; width:100%;}
 .allocation-overview span{background:#5392cb; border:1px solid #5392cb; font-size: 11px; text-align: center; color:#fff; display: block; padding: 2px 5px; transition: .3s ease-out;}
 .allocation-overview a:hover {text-decoration: none}
@@ -821,10 +821,11 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 .data-table-panel .table tr th, .table tr td {padding: .50rem;}
 #dvContribution .table {font-size: 14px !important;}
 #dvContribution td:nth-of-type(3){display:table-cell}
-#data-table tr thead{overflow: hidden; width: 100%}
-
+#data-table thead{overflow: hidden; width: 1140px}
 
 #pbiclitooltipdiv, #pbiclctooltipdiv, #pbiolctooltipdiv, #pbiobetooltipdiv{max-width: none !important}
+
+.bn-prefix{margin-right:0}
 
 .loading-panel{
 	align-items: center;
