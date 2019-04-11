@@ -626,6 +626,7 @@ nav[data-toggle=toc] .nav > li > a:focus, nav[data-toggle=toc] .nav > li > a:hov
 .btn-custom{background-color: #e27628; border-radius: 4px; text-align: center; border: 1px solid #e27628; color: #fff; font-weight: 600; line-height: 14px;  padding: 5px 15px; height: 31px; font-size: 14px; cursor: pointer;}
 .search-country{font-size: 13px}
 .search-country select{border-radius: 3px; padding: 4px; min-width: 150px; border-color: #ddd; margin-left: 5px}
+.box{display: -webkit-flex; /* Safari */ display: flex; /* Standard syntax */}
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -695,6 +696,7 @@ nav[data-toggle=toc] .nav > li > a:focus, nav[data-toggle=toc] .nav > li > a:hov
 .pbicliFiltersDiv label{margin-bottom:0 !important}
 .pbicliDonorsLegendDivTop p{margin-bottom:0 !important}
 .pbicliCbpfsLegendDivTop p{margin-bottom:0 !important}
+
 
 .cd-footer, .cd-header {font-family: helvetica,arial,sans-serif; font-size: 12px; font-weight: 300;	box-sizing: border-box;}
 .cd-global-header {background: #026cb6; background-image: linear-gradient(-180deg,#026cb6 67%,#025995 97%); color: #fff; height: 35px; position: relative;}
@@ -800,7 +802,7 @@ a.cd-footer-social__link:focus .hover-style, a.cd-footer-social__link:hover .hov
 /*Country page*/
 .grey-bg{background-color: #faf9f9}
 .map-panel{text-align: center; padding: 15px 0}
-.allocation-panel{background-color: #e2f2fd; border-radius: 4px; padding:30px 10px; font-family: "Montserrat"; color:#026cb6; text-align: center}
+.allocation-panel{background-color: #e2f2fd; border-radius: 4px; padding:30px 10px; font-family: "Montserrat"; color:#026cb6; text-align: center; -webkit-flex: 1; /* Safari */ -ms-flex: 1; /* IE 10 */ flex: 1; /* Standard syntax */}
 .allocation-panel h1{font-size: 26px; font-weight:600; margin: 0}
 .allocation-panel span{font-size: 14px;}
 .country-hd{font-size: 32px; font-family: "Montserrat"; font-weight:600; margin-bottom: 1.8rem;}
@@ -821,9 +823,11 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 .data-table-panel .table tr th, .table tr td {padding: .50rem;}
 #dvContribution .table {font-size: 14px !important;}
 #dvContribution td:nth-of-type(3){display:table-cell}
-#data-table thead{overflow: hidden; width: 1140px}
+#dvAllocation {overflow: hidden;}
+.dataTables_scroll{margin-bottom:5px}
 
-#pbiclitooltipdiv, #pbiclctooltipdiv, #pbiolctooltipdiv, #pbiobetooltipdiv{max-width: none !important}
+#pbiclitooltipdiv, #pbiclctooltipdiv, #pbiolctooltipdiv, #pbiobetooltipdiv{box-sizing: content-box;}
+#d3chartcontainerpbialp #pbialptooltipdiv{box-sizing: content-box}
 
 .bn-prefix{margin-right:0}
 
