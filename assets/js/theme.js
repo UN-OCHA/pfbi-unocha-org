@@ -48,7 +48,7 @@ let $underApproval_ = document.querySelector('#underApprovalFig');
 let $updatedOn_ = document.querySelector('#updatedOn');
 let $allocationYear=document.querySelector('.annualHeading__2uJLv');
 
-var yearToShowDataOnLoad = 2018;
+var yearToShowDataOnLoad = 2019;
 
 fetch('https://cbpfapi.unocha.org/vo2/odata/CBPFSummary?allocationYear='+ yearToShowDataOnLoad)
   .then(response => {
