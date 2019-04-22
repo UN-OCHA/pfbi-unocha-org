@@ -51,9 +51,9 @@ let $allocationYear=document.querySelector('.annualHeading__2uJLv');
 var yearToShowDataOnLoad = 2019;
 
 fetch('https://cbpfapi.unocha.org/vo2/odata/CBPFSummary?allocationYear='+ yearToShowDataOnLoad)
-  .then(response => {
+  .then(function(response) {
     if (response.ok) {
-      response.json().then(data => {
+      response.json().then(function(data) {
         //$div1_.textContent = JSON.stringify(data);
         var obj = data;
 		if($donors_ != null)
@@ -76,14 +76,14 @@ fetch('https://cbpfapi.unocha.org/vo2/odata/CBPFSummary?allocationYear='+ yearTo
       });
     } else console.log('Network response was not ok.');
   })
-  .catch(error => {
+  .catch(function(error) {
     console.log('Fetch error: ');
   });
 
 fetch('https://cbpfapi.unocha.org/vo2/odata/LastModified')
-  .then(response => {
+  .then(function(response) {
     if (response.ok) {
-      response.json().then(data => {
+      response.json().then(function(data) {
         //$div1_.textContent = JSON.stringify(data);
         var obj = data;
 		if($updatedOn_ != undefined && $updatedOn_ != null)
@@ -91,7 +91,7 @@ fetch('https://cbpfapi.unocha.org/vo2/odata/LastModified')
       });
     } else console.log('Network response was not ok.');
   })
-  .catch(error => {
+  .catch(function(error) {
     console.log('Fetch error: ');
   });
 

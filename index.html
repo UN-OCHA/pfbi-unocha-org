@@ -29,7 +29,15 @@
     </script>
 </head>
 
-<body style="font-family: Montserrat, sans-serif;" data-spy="scroll" data-target="#toc">
+<body style="font-family: Montserrat, sans-serif;" data-spy="scroll" data-target="#toc">	
+	<div class="notification-bar">
+		<div class="alert alert-warning fade in alert-dismissible show">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    			<span aria-hidden="true" style="font-size:25px">×</span>
+  			</button>
+    		<strong>Browser Support :</strong> This site is best viewable in “Google Chrome” or “Microsoft Edge”
+    	</div>
+	</div>
 	<header class="cd-header">
 	<div class="cd-global-header">
 		<div class="container">
@@ -836,9 +844,9 @@
 	{
 	showLoader();
 	fetch('https://cbpfapi.unocha.org/vo2/odata/CBPFSummary?allocationYear='+allocYear)
-  .then(response => {
+  .then(function(response) {
     if (response.ok) {
-      response.json().then(data => {
+      response.json().then(function(data) {
         //$div1_.textContent = JSON.stringify(data);
         var obj = data;
 		if($donors_ != null)
@@ -863,7 +871,7 @@
 	
 	hideLoader();
   })
-  .catch(error => {
+  .catch(function(error) {
 					hideLoader();
 					console.log('Fetch error: ');
   });
