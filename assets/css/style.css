@@ -333,6 +333,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     float: none !important;
     margin-top: 0!important;
   }
+.allocation-overview{top: 239px !important;}
 }
 
 @media (max-width: 767px) {
@@ -383,7 +384,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
 	nav[data-toggle=toc] .nav>li>a{font-size: 9px; padding: 4px 8px;}
 	.data-explorer table{font-size: 0.8rem;}
 	.cookie-panel .btn-custom{height: auto;}
-	.pbimapFiltersDiv .pbimapDropdownPaddingDiv{background-color: transparent;}
+	.pbimapFiltersDiv .pbimapDropdownPaddingDiv{background-color: transparent;}	
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -431,7 +432,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     font-size: 17px;
     min-height: 175px;
   }
-  .allocation-overview{top: 319px !important;}
+  .allocation-overview{top: 239px !important;}
   .cookie-panel .btn-custom{height: auto}
 }
 
@@ -796,8 +797,14 @@ a.cd-footer-social__link:focus .hover-style, a.cd-footer-social__link:hover .hov
 .allocation-overview a:hover {text-decoration: none}
 .allocation-overview a:hover span{color:#fff; text-decoration: none; border:1px solid #32659a; background:#32659a;}
 @-moz-document url-prefix(){ .allocation-overview span {font-weight: 300 !important;}}
+_:-ms-fullscreen, :root .allocation-overview{position: absolute; top: 390px;}
+_:-ms-fullscreen, :root .btn-fullscreen{display:none}
+_:-ms-fullscreen, :root .notification-bar{display:block}
 
 .breadcrumb{font-size: 0.8rem; padding: .45rem 0.7rem; margin-top: 10px}
+.notification-bar{display:none}
+.notification-bar .alert{margin-bottom: 0; border:none; border-bottom:1px solid #eee !important; border-radius:0; text-align: center; font-size: 15px; color: #000; background-color: #f3b640;}
+.notification-bar-oldbi .alert{margin-bottom: 0; border:none; border-bottom:1px solid #eee !important; border-radius:0; text-align: center; font-size: 15px; color: #000; background-color: #ffe984;}
 
 /*Country page*/
 .grey-bg{background-color: #faf9f9}
