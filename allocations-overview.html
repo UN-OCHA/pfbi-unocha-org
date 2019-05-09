@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="assets/css/Highlight-Phone.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<style>
-		.allocations-overview-chart{border:1px solid #ccc; margin-bottom: 100px; border-radius:5px}
 		svg{background-color: transparent}
 	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -111,7 +110,7 @@
                     </ol>
                     <h1 class="text-center"><strong>Allocations Overview</strong></h1>
 					<div class="allocations-overview-chart">
-                    	<div id="d3chartcontainerpbimap" data-title=" " data-year="2018" data-cbpf="all" data-partner="all" data-cluster="all" data-adminlevel="all" data-responsive="true" data-lazyload="true" data-showhelp="true"></div><script type="text/javascript" src="https://cbpfgms.github.io/pbimap/src/d3chartpbimap.js"></script>
+                    	<div id="d3chartcontainerpbimap" data-title=" " data-year="2018" data-cbpf="all" data-partner="all" data-cluster="all" data-adminlevel="all" data-responsive="true" data-lazyload="true" data-showhelp="true"></div>
 						<p class="text-center" style="font-size:11px; color:#aaa; padding-top: 5px; margin:0"><b>Disclaimer:</b> Figures for people targeted and reached may include double counting as individuals often receive aid from multiple cluster/sectors</p>
 					</div>
                 </div>
@@ -214,6 +213,21 @@
 	<script src="assets/js/custom-menu.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		
+    if (document.location.hostname.search("pfbi.unocha.org") !== -1) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1884029-23');
+		$.getScript("https://cbpfgms.github.io/pbimap/src/d3chartpbimap.js", function() {});
+    } 
+	else{
+		$.getScript("https://cbpfgms.github.io/pbimap/src/d3chartpbimap-stg.js", function() {});
+	}
+		
+	</script>
+
 	<script>
 	$(document).ready(function(){
 	  $("#cd-ocha-dropdown-toggle").click(function(){

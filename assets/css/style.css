@@ -805,6 +805,7 @@ _:-ms-fullscreen, :root .notification-bar{display:block}
 .notification-bar{display:none}
 .notification-bar .alert{margin-bottom: 0; border:none; border-bottom:1px solid #eee !important; border-radius:0; text-align: center; font-size: 15px; color: #000; background-color: #f3b640;}
 .notification-bar-oldbi .alert{margin-bottom: 0; border:none; border-bottom:1px solid #eee !important; border-radius:0; text-align: center; font-size: 15px; color: #000; background-color: #ffe984;}
+.notification-bar-oldbi .alert a{color:#146eb4;}
 
 /*Country page*/
 .grey-bg{background-color: #faf9f9}
@@ -835,6 +836,8 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 
 #pbiclitooltipdiv, #pbiclctooltipdiv, #pbiolctooltipdiv, #pbiobetooltipdiv{box-sizing: content-box;}
 #d3chartcontainerpbialp #pbialptooltipdiv{box-sizing: content-box}
+
+.pbialpYearsDescriptionDiv{text-align: left;}
 
 .bn-prefix{margin-right:0}
 
