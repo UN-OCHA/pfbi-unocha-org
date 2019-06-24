@@ -299,7 +299,7 @@ span[class*="tag-"] {
   padding-top: 50px;
 }
 
-#contribution_heading, #contributiontrend_heading, #allocation_heading, #allocationtrend_heading, #fundingoverview_heading, #cluster_heading, #clustertrend_heading {
+#contribution_heading, #contributiontrend_heading, #allocation_heading, #allocationtrend_heading, #allocationtimeline_heading, #fundingoverview_heading, #cluster_heading, #clustertrend_heading {
   margin-top: -50px;
   padding-top: 50px;
 }
@@ -333,7 +333,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     float: none !important;
     margin-top: 0!important;
   }
-.allocation-overview{top: 239px !important;}
+.allocation-overview{top: 279px !important;}
 }
 
 @media (max-width: 767px) {
@@ -432,7 +432,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     font-size: 17px;
     min-height: 175px;
   }
-  .allocation-overview{top: 239px !important;}
+  .allocation-overview{top: 279px !important;}
   .cookie-panel .btn-custom{height: auto}
 }
 
@@ -644,7 +644,12 @@ nav[data-toggle=toc] .nav > li > a:focus, nav[data-toggle=toc] .nav > li > a:hov
 .modal-content {
   height: 99%;
 }
-
+.modal .modal-content{
+overflow:hidden;
+}
+.modal-body{
+overflow-y:scroll;
+}
 .bd-example-modal-lg, .bd-example2-modal-lg, .bd-example3-modal-lg, .bd-example4-modal-lg, .bd-example5-modal-lg, .bd-example6-modal-lg, .bd-example7-modal-lg {
   padding-right: 0 !important;
 }
@@ -791,7 +796,7 @@ a.cd-footer-social__link:focus .hover-style, a.cd-footer-social__link:hover .hov
 	.cd-footer-copyright svg {margin: 0 0 0 20px;}
 }
 
-.allocation-overview{position: absolute; top: 271px;}
+.allocation-overview{position: absolute; top: 311px;}
 .allocation-overview img{border:1px solid #d4dadc; width:100%;}
 .allocation-overview span{background:#5392cb; border:1px solid #5392cb; font-size: 11px; text-align: center; color:#fff; display: block; padding: 2px 5px; transition: .3s ease-out;}
 .allocation-overview a:hover {text-decoration: none}
@@ -840,6 +845,25 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 .pbialpYearsDescriptionDiv{text-align: left;}
 
 .bn-prefix{margin-right:0}
+
+.d3chartIconsDiv button{padding:2px 8px 1px 8px !important}
+.pbicliIconsDiv button {padding:2px 8px 1px 8px !important; box-shadow: 2px 2px 2px rgba(0,0,0,0.4); -webkit-border-radius: 6px; border-radius: 6px; border-bottom-width: 1px !important; border-right-width: 1px !important;}
+
+#d3chartcontainerpbiuac .pbiuacListContainerDiv {border: 1px solid #eee; padding: 10px; background-color: #f5f5f5; margin-top: 10px; border-radius: 5px;}
+#d3chartcontainerpbiuac .pbiuacListTitleDivContainer {border-bottom: 1px dotted #ccc; margin-top:0;}
+#d3chartcontainerpbiuac .pbiuacListTitleDivContainer .pbiuacListButtonDiv{margin-right: 0; margin-bottom: 5px;}
+#d3chartcontainerpbiuac .pbiuacListTitleDivContainer .pbiuacListTitleDiv{ margin-left: 0;}
+#d3chartcontainerpbiuac .pbiuacListTitleDivContainer .pbiuacListTitleDiv p{color: #e27628;}
+#d3chartcontainerpbiuac .pbiuacNameAndYearDiv{font-weight: bold; color: #2e649b;}
+#d3chartcontainerpbiuac .pbiuacAllocationTitle p{font-size: 15px; font-weight: bold;}
+#d3chartcontainerpbiuac .pbiuacAllocationSource p{font-size: 13px; font-style: italic; color:#2f4f4f;}
+#d3chartcontainerpbiuac .pbiuacAllocationStart p{font-size: 13px; font-weight: bold; color: #418fde;}
+#d3chartcontainerpbiuac .pbiuacAllocationEnd p {font-size: 13px; font-weight: bold; color: #418fde;}
+#d3chartcontainerpbiuac .pbiuacAllocationHR p {font-size: 13px; font-weight: bold; color: #418fde;}
+#d3chartcontainerpbiuac .pbiuacAllocationStart p span{color: #444; font-weight: normal;}
+#d3chartcontainerpbiuac .pbiuacAllocationEnd p span {color: #444; font-weight: normal;}
+#d3chartcontainerpbiuac .pbiuacAllocationHR p span {color: #444; font-weight: normal;}
+
 
 .loading-panel{
 	align-items: center;
