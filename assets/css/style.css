@@ -432,7 +432,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     font-size: 17px;
     min-height: 175px;
   }
-  .allocation-overview{top: 279px !important;}
+  .allocation-overview{top: 359px !important;}
   .cookie-panel .btn-custom{height: auto}
 }
 
@@ -794,6 +794,7 @@ a.cd-footer-social__link:focus .hover-style, a.cd-footer-social__link:hover .hov
 	.cd-footer-copyright {display: flex; align-items: center; justify-content: flex-end; margin: 34px 0 0; text-align: right;}
 	.cd-footer-copyright__text {display: inline-block; max-width: 100%; flex-shrink: 1;}
 	.cd-footer-copyright svg {margin: 0 0 0 20px;}
+	
 }
 
 .allocation-overview{position: absolute; top: 311px;}
@@ -851,7 +852,7 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 
 #d3chartcontainerpbiuac .pbiuacListContainerDiv {border: 1px solid #eee; padding: 10px; background-color: #f5f5f5; margin-top: 10px; border-radius: 5px;}
 #d3chartcontainerpbiuac .pbiuacListTitleDivContainer {border-bottom: 1px dotted #ccc; margin-top:0;}
-#d3chartcontainerpbiuac .pbiuacListTitleDivContainer .pbiuacListButtonDiv{margin-right: 0; margin-bottom: 5px;}
+#d3chartcontainerpbiuac .pbiuacListTitleDivContainer .pbiuacListButtonDiv{margin-right: 0; margin-bottom: 5px; font-family: "Arial", sans-serif;}
 #d3chartcontainerpbiuac .pbiuacListTitleDivContainer .pbiuacListTitleDiv{ margin-left: 0;}
 #d3chartcontainerpbiuac .pbiuacListTitleDivContainer .pbiuacListTitleDiv p{color: #e27628;}
 #d3chartcontainerpbiuac .pbiuacNameAndYearDiv{font-weight: bold; color: #2e649b;}
@@ -863,7 +864,16 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 #d3chartcontainerpbiuac .pbiuacAllocationStart p span{color: #444; font-weight: normal;}
 #d3chartcontainerpbiuac .pbiuacAllocationEnd p span {color: #444; font-weight: normal;}
 #d3chartcontainerpbiuac .pbiuacAllocationHR p span {color: #444; font-weight: normal;}
+#d3chartcontainerpbiuac .pbiuacDocumentsDiv{margin-bottom: 0; background-color: #eee;}
+#d3chartcontainerpbiuac .pbiuacDocumentsDiv p{font-size: 13px; padding: 5px 10px;}
+#d3chartcontainerpbiuac .pbiuacDocumentsList{background-color: #eee; padding-bottom: 5px; padding-left: 10px;}
+#d3chartcontainerpbiuac .pbiuacDocumentsList p{font-size: 13px; color: #dc4040;}
+#d3chartcontainerpbiuac .pbiuacDocumentsList ol{margin-bottom: 0; font-size: 12px; font-family: "Arial", sans-serif; font-style: italic; color: #444;}
+#pbiclcDownloadingDiv{box-sizing: initial;}
 
+@media (max-width: 1024px){
+		#d3chartcontainerpbiuac #pbiuactooltipdiv {margin-left: -10% !important;}
+	}
 
 .loading-panel{
 	align-items: center;
