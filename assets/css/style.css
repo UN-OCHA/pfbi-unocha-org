@@ -171,8 +171,7 @@ td:nth-of-type(6) {
 
 .clean-block .block-heading p {
   margin-bottom: 1rem;
-  max-width: 100% !important;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .text-info {
@@ -299,7 +298,7 @@ span[class*="tag-"] {
   padding-top: 50px;
 }
 
-#contribution_heading, #contributiontrend_heading, #allocation_heading, #allocationtrend_heading, #allocationtimeline_heading, #fundingoverview_heading, #cluster_heading, #clustertrend_heading {
+#contribution_heading, #contributiontrend_heading, #allocation-banner_heading, #allocationtrend_heading, #allocationtimeline_heading, #fundingoverview_heading, #cluster_heading, #clustertrend_heading {
   margin-top: -50px;
   padding-top: 50px;
 }
@@ -842,6 +841,7 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 
 #pbiclitooltipdiv, #pbiclctooltipdiv, #pbiolctooltipdiv, #pbiobetooltipdiv{box-sizing: content-box;}
 #d3chartcontainerpbialp #pbialptooltipdiv{box-sizing: content-box}
+#d3chartcontainerpbialp .pbialpSnapshotContent p{text-align: left; opacity: 1;}
 
 .pbialpYearsDescriptionDiv{text-align: left;}
 
@@ -869,11 +869,14 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 #d3chartcontainerpbiuac .pbiuacDocumentsList{background-color: #eee; padding-bottom: 5px; padding-left: 10px;}
 #d3chartcontainerpbiuac .pbiuacDocumentsList p{font-size: 13px; color: #dc4040;}
 #d3chartcontainerpbiuac .pbiuacDocumentsList ol{margin-bottom: 0; font-size: 12px; font-family: "Arial", sans-serif; font-style: italic; color: #444;}
-#pbiclcDownloadingDiv{box-sizing: initial;}
+#pbiclcDownloadingDiv, #pbicliDownloadingDiv, #pbialpDownloadingDiv, #pbialiDownloadingDiv, #pbiuacDownloadingDiv, #pbifdcDownloadingDiv, #pbiolcDownloadingDiv, #pbiobeDownloadingDiv{box-sizing: initial;}
+
+#d3chartcontainerpbifdc{overflow: visible !important; box-sizing: initial !important;}
 
 @media (max-width: 1024px){
 		#d3chartcontainerpbiuac #pbiuactooltipdiv {margin-left: -10% !important;}
 	}
+.allocation_banner{text-align: center; margin-top: 10px;}
 
 .loading-panel{
 	align-items: center;
