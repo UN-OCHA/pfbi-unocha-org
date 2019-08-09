@@ -451,10 +451,9 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
 } */
 
 @media only screen and (max-device-width: 812px) and (orientation:landscape) {
-  nav[data-toggle="toc"] {
-    float: none !important;
-    margin-left: -20px;
-  }
+  nav[data-toggle="toc"] {float: none !important; margin-left: -20px;}
+  nav[data-toggle="toc"] .nav>li>a {font-size: 9px; padding: 4px 8px;}
+  nav[data-toggle="toc"] .nav-link.active{padding-left: 7px;}
 }
 
 @media only screen and (max-device-width: 812px) and (orientation:landscape) {
@@ -806,6 +805,11 @@ _:-ms-fullscreen, :root .allocation-overview{position: absolute; top: 390px;}
 _:-ms-fullscreen, :root .btn-fullscreen{display:none}
 _:-ms-fullscreen, :root .notification-bar{display:block}
 
+@supports (-ms-ime-align:auto)
+and (not (-ms-accelerator:true)) {
+  .allocation-overview{position: absolute; top: 356px;} 
+}
+
 .breadcrumb{font-size: 0.8rem; padding: .45rem 0.7rem; margin-top: 10px}
 .notification-bar{display:none}
 .notification-bar .alert{margin-bottom: 0; border:none; border-bottom:1px solid #eee !important; border-radius:0; text-align: center; font-size: 15px; color: #000; background-color: #f3b640;}
@@ -916,17 +920,20 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 }
 
 @keyframes rotate {
-  0% { 
+  0% { 	  
     -webkit-transform: rotate(0deg) scale(0.8); 
     -moz-transform: rotate(0deg) scale(0.8);
+	 transform: rotate(0deg) scale(0.8);
   }
   50% { 
     -webkit-transform: rotate(360deg) scale(1.2); 
     -moz-transform: rotate(360deg) scale(1.2);
+	  transform: rotate(360deg) scale(1.2);
   }
   100% { 
     -webkit-transform: rotate(720deg) scale(0.8); 
     -moz-transform: rotate(720deg) scale(0.8);
+	  transform: rotate(720deg) scale(0.8);
   }
 }
 
@@ -939,6 +946,7 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
     margin-bottom: 0;
     -webkit-transform: translate(15px,15px);
     -moz-transform: translate(15px, 15px);
+	  transform: translate(15px, 15px);
   }
   100% {
     box-shadow: 30px 0 0 #0d6cb6;
@@ -955,6 +963,7 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
     margin-top: -20px;
     -webkit-transform: translate(15px,15px);
     -moz-transform: translate(15px, 15px);
+	  transform: translate(15px, 15px);
   }
   100% {
     box-shadow: 30px 0 0 #e77817;
