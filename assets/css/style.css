@@ -851,7 +851,8 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 
 .bn-prefix{margin-right:0}
 
-.d3chartIconsDiv button{padding:2px 8px 1px 8px !important}
+.pbiclcSnapshotDiv, .pbicliSnapshotDiv, .pbialpSnapshotDiv, .pbialiSnapshotDiv, .pbiuacSnapshotDiv, .pbifdcSnapshotDiv, .pbiolcSnapshotDiv, .pbiobeSnapshotDiv{line-height: 18px;}
+.d3chartIconsDiv button{padding:2px 8px 1px 8px !important;}
 .pbicliIconsDiv button {padding:2px 8px 1px 8px !important; box-shadow: 2px 2px 2px rgba(0,0,0,0.4); -webkit-border-radius: 6px; border-radius: 6px; border-bottom-width: 1px !important; border-right-width: 1px !important;}
 
 #d3chartcontainerpbiuac .pbiuacListContainerDiv {border: 1px solid #eee; padding: 10px; background-color: #f5f5f5; margin-top: 10px; border-radius: 5px;}
