@@ -50,35 +50,35 @@ let $allocationYear=document.querySelector('.annualHeading__2uJLv');
 
 var yearToShowDataOnLoad = 2019;
 
-fetch('https://cbpfapi.unocha.org/vo2/odata/CBPFSummary?allocationYear='+ yearToShowDataOnLoad)
-  .then(function(response) {
-    if (response.ok) {
-      response.json().then(function(data) {
-        //$div1_.textContent = JSON.stringify(data);
-        var obj = data;
-		if($donors_ != null)
-        $donors_.textContent = obj.donors;
+//fetch('https://cbpfapi.unocha.org/vo2/odata/CBPFSummary?allocationYear='+ yearToShowDataOnLoad)
+ // .then(function(response) {
+  //  if (response.ok) {
+   //   response.json().then(function(data) {
+ //       //$div1_.textContent = JSON.stringify(data);
+  //      var obj = data;
+	//	if($donors_ != null)
+   //     $donors_.textContent = obj.donors;
 	
-	if($partnersFunded_ != null)
-    	$partnersFunded_.textContent = obj.partnersFunded;
+//	if($partnersFunded_ != null)
+    //	$partnersFunded_.textContent = obj.partnersFunded;
 	
-	if($projects_ != null)
-        $projects_.textContent = obj.projectsFunded;
+	//if($projects_ != null)
+     //   $projects_.textContent = obj.projectsFunded;
 	
-	if($contributions_ != null)
-        $contributions_.textContent = '$'+ formatNumber(obj.contribTotalAmt);
+//	if($contributions_ != null)
+  //      $contributions_.textContent = '$'+ formatNumber(obj.contribTotalAmt);
 	
-	if($allocations_ != null)
-        $allocations_.textContent = '$'+ formatNumber(obj.allocAmt);
+//	if($allocations_ != null)
+ //       $allocations_.textContent = '$'+ formatNumber(obj.allocAmt);
 	
-	if($underApproval_ != null)
-        $underApproval_.textContent = '$'+ formatNumber(obj.underApprovalAmt);
-      });
-    } else console.log('Network response was not ok.');
-  })
-  .catch(function(error) {
-    console.log('Fetch error: ');
-  });
+//	if($underApproval_ != null)
+ //       $underApproval_.textContent = '$'+ formatNumber(obj.underApprovalAmt);
+ //     });
+//    } else console.log('Network response was not ok.');
+//  })
+ // .catch(function(error) {
+ //   console.log('Fetch error: ');
+//  });
 
 fetch('https://cbpfapi.unocha.org/vo2/odata/LastModified')
   .then(function(response) {
