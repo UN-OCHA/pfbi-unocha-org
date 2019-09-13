@@ -82,44 +82,52 @@
             </div>
         </div>
         <script>
-            (new URL(window.location.href)).searchParams.forEach(
-                (x, y) => {
-                    console.log(x);
-                    console.log(y);
-                    if (y === "viz") {
-                        if (x === "contributions") {
-                            fileSrc = "https://cbpfgms.github.io/pbiclc/src/d3chartpbiclc.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "contribution-trends") {
-                            fileSrc = "https://cbpfgms.github.io/pbicli/src/d3chartpbicli.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "allocations") {
-                            fileSrc = "https://cbpfgms.github.io/pbialp/src/d3chartpbialp.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "allocation-trends") {
-                            fileSrc = "https://cbpfgms.github.io/pbiali/src/d3chartpbiali.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "funding-overview") {
-                            fileSrc = "https://cbpfgms.github.io/pbifdc/src/d3chartpbifdc.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "clusters") {
-                            fileSrc = "https://cbpfgms.github.io/pbiolc/src/d3chartpbiolc.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "affected-persons-trends") {
-                            fileSrc = "https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "allocations-timeline") {
-                            fileSrc = "https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac.js";
-                            includeJsFile(fileSrc);
-                        } else if (x === "allocations-overview") {
-                            fileSrc = "https://cbpfgms.github.io/pbimap/src/d3chartpbimap.js";
-                            includeJsFile(fileSrc);
-                        } else {
-                            alert("There is no dashboard to display");
-                        }
-                    }
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                    pl     = /\+/g,  // Regex for replacing addition symbol with a space
+                    search = /([^&=]+)=?([^&]*)/g,
+                    decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                    query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query))
+                urlParams[decode(match[1])] = decode(match[2]);
+            })();
+
+            x = urlParams["viz"];
+            if ("viz" in urlParams) {
+                if (x === "contributions") {
+                    fileSrc = "https://cbpfgms.github.io/pbiclc/src/d3chartpbiclc-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "contribution-trends") {
+                    fileSrc = "https://cbpfgms.github.io/pbicli/src/d3chartpbicli-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "allocations") {
+                    fileSrc = "https://cbpfgms.github.io/pbialp/src/d3chartpbialp-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "allocation-trends") {
+                    fileSrc = "https://cbpfgms.github.io/pbiali/src/d3chartpbiali-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "funding-overview") {
+                    fileSrc = "https://cbpfgms.github.io/pbifdc/src/d3chartpbifdc-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "clusters") {
+                    fileSrc = "https://cbpfgms.github.io/pbiolc/src/d3chartpbiolc-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "affected-persons-trends") {
+                    fileSrc = "https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "allocations-timeline") {
+                    fileSrc = "https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac-stg.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "allocations-overview") {
+                    fileSrc = "https://cbpfgms.github.io/pbimap/src/d3chartpbimap-stg.js";
+                    includeJsFile(fileSrc);
+                } else {
+                    alert("There is no dashboard to display");
                 }
-            );
+            }
 
             function includeJsFile(fileName) {
                 var _script = document.createElement('script');
