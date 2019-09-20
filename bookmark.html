@@ -37,10 +37,15 @@
     </script>
     <style>
         .header {
-            padding: 10px 16px;
-            background: #498bca;
+            padding: 5px 15px;
+            background: #ff9800;
             color: #f1f1f1;
             z-index: 9999;
+	    font-size: 14px;
+    	    text-align: center;
+	    --webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.13);
+            -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.13);
+    	    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.13);
         }
         
         .header c a {
@@ -62,12 +67,12 @@
 
 <body>
     <div class="header" id="myHeader">
-        <c><a id="notification" href="https://pfbi.unocha.org">This is PFBI Bookmark page. Click here to visit PFBI main page for more details</a></c>
+        <c><a id="notification" href="https://pfbi.unocha.org">This is PFBI Bookmark page. <b>Click here</b> to visit PFBI main page for more details</a></c>
     </div>
     <section class="marg-tb-30">
+	<div class="container">
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div id="d3chartcontainerpbiclc" data-year="2019" data-contribution="total" data-responsive="true" data-lazyload="true"></div>
                 <div id="d3chartcontainerpbicli" data-showfuture="true" data-responsive="true"></div>
                 <div id="d3chartcontainerpbialp" data-year="2019" data-partner="total" data-showaverage="true" data-responsive="true" data-lazyload="true"></div>
@@ -77,9 +82,7 @@
                 <div id="d3chartcontainerpbiolc" data-title="Cluster Overview" data-showhelp="false" data-cbpf="all" data-year="2019" data-modality="total" data-beneficiaries="targeted" data-responsive="true" data-lazyload="true"></div>
                 <div id="d3chartcontainerpbiobe" data-title="Affected Persons Overview" data-cbpf="all" data-year="2019" data-responsive="true" data-lazyload="true"></div>
                 <div id="d3chartcontainerpbimap" data-title=" " data-year="2018" data-cbpf="all" data-partner="all" data-cluster="all" data-adminlevel="all" data-responsive="true" data-lazyload="true" data-showhelp="true"></div>
-            </div>
-            <div class="col-md-2">
-            </div>
+	    </div>
         </div>
         <script>
             var urlParams;
