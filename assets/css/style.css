@@ -878,6 +878,11 @@ h1.country-hd:after{border-bottom:3px solid #026cb6; display: block; width: 112p
 
 #d3chartcontainerpbifdc{overflow: visible !important; box-sizing: initial !important;}
 
+#d3chartShareDiv{border: 2px solid #026cb6 !important; box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);}
+#d3chartShareDivHeaderText span{color: #1f69b3;}
+#d3chartShareDivBody{display: block !important;}
+#d3chartShareDivBodyInput input{border: 1px solid #f79c3b;}
+
 @media (max-width: 1024px){
 		#d3chartcontainerpbiuac #pbiuactooltipdiv {margin-left: -10% !important;}
 	}
