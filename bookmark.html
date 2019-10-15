@@ -82,7 +82,8 @@
                     <div id="d3chartcontainerpbiolc" data-title="Cluster Overview" data-showhelp="false" data-cbpf="all" data-year="2019" data-modality="total" data-beneficiaries="targeted" data-responsive="true" data-lazyload="true"></div>
                     <div id="d3chartcontainerpbiobe" data-title="Affected Persons Overview" data-cbpf="all" data-year="2019" data-responsive="true" data-lazyload="true"></div>
                     <div id="d3chartcontainerpbimap" data-title=" " data-year="2018" data-cbpf="all" data-partner="all" data-cluster="all" data-adminlevel="all" data-responsive="true" data-lazyload="true" data-showhelp="true"></div>
-	        </div>
+	            <div id="d3chartcontainerpbihrp" data-title=" " data-year="2019" data-sortby="CBPF funding" data-showhelp="false" data-showlink="true" data-responsive="true" data-lazyload="true"></div>
+		</div>
             </div>
 	</div>
         <script>
@@ -102,31 +103,34 @@
             x = urlParams["viz"];
             if ("viz" in urlParams) {
                 if (x === "contributions") {
-                    fileSrc = "https://cbpfgms.github.io/pbiclc/src/d3chartpbiclc-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbiclc/src/d3chartpbiclc.js";
                     includeJsFile(fileSrc);
                 } else if (x === "contribution-trends") {
-                    fileSrc = "https://cbpfgms.github.io/pbicli/src/d3chartpbicli-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbicli/src/d3chartpbicli.js";
                     includeJsFile(fileSrc);
                 } else if (x === "allocations") {
-                    fileSrc = "https://cbpfgms.github.io/pbialp/src/d3chartpbialp-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbialp/src/d3chartpbialp.js";
                     includeJsFile(fileSrc);
                 } else if (x === "allocation-trends") {
-                    fileSrc = "https://cbpfgms.github.io/pbiali/src/d3chartpbiali-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbiali/src/d3chartpbiali.js";
                     includeJsFile(fileSrc);
                 } else if (x === "funding-overview") {
-                    fileSrc = "https://cbpfgms.github.io/pbifdc/src/d3chartpbifdc-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbifdc/src/d3chartpbifdc.js";
                     includeJsFile(fileSrc);
                 } else if (x === "clusters") {
-                    fileSrc = "https://cbpfgms.github.io/pbiolc/src/d3chartpbiolc-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbiolc/src/d3chartpbiolc.js";
                     includeJsFile(fileSrc);
                 } else if (x === "affected-persons-trends") {
-                    fileSrc = "https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe.js";
                     includeJsFile(fileSrc);
                 } else if (x === "allocations-timeline") {
-                    fileSrc = "https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac.js";
                     includeJsFile(fileSrc);
                 } else if (x === "allocations-overview") {
-                    fileSrc = "https://cbpfgms.github.io/pbimap/src/d3chartpbimap-stg.js";
+                    fileSrc = "https://cbpfgms.github.io/pbimap/src/d3chartpbimap.js";
+                    includeJsFile(fileSrc);
+                } else if (x === "cbpfvshrp") {
+                    fileSrc = "https://cbpfgms.github.io/pbihrp/src/d3chartpbihrp.js";
                     includeJsFile(fileSrc);
                 } else {
                     alert("There is no dashboard to display");
