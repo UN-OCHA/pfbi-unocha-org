@@ -198,7 +198,7 @@ function formatNumber(num, digits) {
         },
         {
             value: 1E9,
-            symbol: "G"
+            symbol: "B"
         },
         {
             value: 1E12,
