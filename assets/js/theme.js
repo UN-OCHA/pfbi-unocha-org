@@ -171,7 +171,7 @@ var ranges = [{
     },
     {
         divider: 1e9,
-        suffix: 'G'
+        suffix: 'B'
     },
     {
         divider: 1e6,
