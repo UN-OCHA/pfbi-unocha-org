@@ -3,7 +3,7 @@ var currentyear = d.getFullYear();
 var changedYear = 0;
 
 var minYear = 2014;
-var yearToShowDataOnLoad = 2019;
+var yearToShowDataOnLoad = 2020;
 
 $(function() {
     $('.annualHeading__2uJLv').text(yearToShowDataOnLoad);
@@ -171,7 +171,7 @@ var ranges = [{
     },
     {
         divider: 1e9,
-        suffix: 'B'
+        suffix: 'G'
     },
     {
         divider: 1e6,
@@ -232,7 +232,7 @@ let $underApproval_ = document.querySelector('#underApprovalFig');
 let $updatedOn_ = document.querySelector('#updatedOn');
 let $allocationYear = document.querySelector('.annualHeading__2uJLv');
 
-var yearToShowDataOnLoad = 2019;
+var yearToShowDataOnLoad = 2020;
 
 fetch('https://cbpfapi.unocha.org/vo2/odata/LastModified')
     .then(function(response) {
