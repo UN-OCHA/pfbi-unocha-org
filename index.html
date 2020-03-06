@@ -17,24 +17,24 @@
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" type="text/css" href="assets/css/breaking-news-ticker.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1884029-23"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch"></script>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Promise%2Cfetch"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@ungap/url-search-params@0.1.2/min.min.js"></script>
     <script type="text/javascript" src="https://cbpfgms.github.io/libraries/html2canvas.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
     <script src="https://kit.fontawesome.com/d5d759e566.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1884029-23"></script>
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstyles.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbialp.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbifdc.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiolc.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiobe.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbicli.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiuac.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiclc.css">
-    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiali.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstyles-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbialp-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbifdc-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiolc-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiobe-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbicli-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiuac-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiclc-stg.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiali-stg.css">
 </head>
 
 <body style="font-family: Montserrat, sans-serif;" data-spy="scroll" data-target="#toc">
@@ -100,7 +100,7 @@
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1" style="font-family:Montserrat, sans-serif;">
                 <ul class="nav navbar-nav ml-auto">
-	  	    <li class="nav-item" role="presentation"><button class="nav-link video-btn" data-toggle="modal" data-src="https://embed.fleeq.io/l/ok1ifsb74r-jjm2cqsf3d" data-target="#myModal" style="color:#146eb4;">
+                    <li class="nav-item" role="presentation"><button class="nav-link video-btn" data-toggle="modal" data-src="https://embed.fleeq.io/l/ok1ifsb74r-jjm2cqsf3d" data-target="#myModal" style="color:#146eb4;">
                         FIRST TIME TO CBPF BI <span><i class="fa fa-play-circle" style="color:#f79a3b"></i></span>
                     </button></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="dataexplorer.html" style="color:#146eb4;">DATA EXPLORER</a></li>
@@ -109,14 +109,13 @@
             </div>
         </div>
     </nav>
-    <section class="clean-block clean-hero" style="background-image: url(assets/img/2019GHO_Nigeria_header.jpg);color: rgba(0,0,0,0.40);min-height: 350px;background-size: cover; background-color: rgba(0,0,0,0.75);">
-        <div class="text" style="width: 100%;max-width: 1140px;padding-top: 50px;padding-bottom: 20px;">
+    <section class="clean-block clean-hero" style="background-image: url(assets/img/bg1.png);color: rgba(0,0,0,0.40);min-height: 350px;background-size: cover; background-color: rgba(0,0,0,0.75); border-bottom: 7px solid #fdc735;">
+        <div class="text" style="width: 100%;max-width: 1140px;padding-top: 10px;padding-bottom: 20px;">
             <h2 data-toc-skip style="margin-bottom: 10px; font-size: 34px">
-			<br>
-            <strong>CBPF BUSINESS INTELLIGENCE (<span style="color:#f79a3b">BI</span>) PORTAL</strong>
-			</h2>
+                <br>
+                <strong>CBPF BUSINESS INTELLIGENCE (<span style="color:#f79a3b">BI</span>) PORTAL</strong>
+            </h2>
             <p>The CBPF BI portal provides detailed contribution and allocation data in real-time</p>
-            <!--<p style="font-size: 25px; margin-bottom: 10px; text-transform: uppercase;">2019 Figures at a Glance</p>-->
             <div class="yearSlider__1HtPN">
                 <button class="previous__39nbE"></button><span class="annualHeading__2uJLv"></span>
                 <button class="next__d5jll"></button>
@@ -184,10 +183,10 @@
                 </div>
             </div>
             <div class="col">
-                <p class="text-center" style="font-size:11px; color:#aaa; padding-top: 5px; margin:0">Data updated on <span id="updatedOn"> //2019 </span></p>
+                <p class="text-center" style="font-size:11px; color:#aaa; padding-top: 5px; margin:0">Data updated on <span id="updatedOn"> //2020 </span></p>
             </div>
         </div>
-    </section>
+    </section>    
     <section class="bg-grey-1">
         <div class="container">
             <div class="row">
@@ -209,7 +208,22 @@
             </div>
         </div>
     </section>
-    <section>
+	<section class="banners-panel">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto col-sm-4">
+                    <a href="allocations-overview.html" title="Alloacation Overview"><img src="assets/img/allocation-overview-banner-update1.png" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-md-auto col-sm-4">
+					<a href="cbpfvshrp.html" title="CBPF vs HRP"><img src="assets/img/cbpf-vs-hrp-banner-update1.png" alt="" class="img-fluid"></a>
+                </div>
+				<div class="col-md-auto col-sm-4">
+					<a href="#gam_heading" title="GAM Marker"><img src="assets/img/gam-marker-update1.png" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -219,7 +233,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <div>
         <div class="container">
             <div class="row">
@@ -231,14 +245,14 @@
                                     <div class="col">
                                         <div class="block-heading" style="padding-top: 0px;">
                                             <div id="anchor-4"></div>
-					    <h2 class="text-info" id="contribution_heading">CONTRIBUTIONS<button class="video-btn" data-toggle="modal" data-src="https://embed.fleeq.io/l/kd5aypmodt-fosiqzucnj" data-target="#myModal"><span class="video-info"><i class="fa fa-play-circle"></i></span>
+                                            <h2 class="text-info" id="contribution_heading">CONTRIBUTIONS<button class="video-btn" data-toggle="modal" data-src="https://embed.fleeq.io/l/kd5aypmodt-fosiqzucnj" data-target="#myModal"><span class="video-info"><i class="fa fa-play-circle"></i></span>
                                                 </button>
                                             </h2>
                                             <p style="max-width:800px;">Since the first CBPF was opened in Angola in 1997, donors have contributed more than $6 billion to 27 funds operating in the most severe and complex emergencies around the world.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="d3chartcontainerpbiclc" data-year="2019" data-contribution="total" data-responsive="true" data-lazyload="true"></div>
+                                <div id="d3chartcontainerpbiclc" data-year="2020" data-contribution="total" data-responsive="true" data-lazyload="true"></div>
 
                             </div>
                         </section>
@@ -249,7 +263,8 @@
                                         <div class="block-heading">
                                             <div id="anchor-1"></div>
                                             <h2 class="text-info" id="contributiontrend_heading">CONTRIBUTION TRENDS</h2>
-                                            <p style="max-width:800px;">Since the first CBPF was opened in Angola in 1997, donors have contributed more than $6 billion to 27 funds operating in the most severe and complex emergencies around the world. In 2018, donors contributed a record $950 million to CBPFs in 18 countries</p>
+                                            <p style="max-width:800px;">Since the first CBPF was opened in Angola in 1997, donors have contributed more than $6 billion to 27 funds operating in the most severe and complex emergencies around the world. In 2018, donors contributed
+                                                a record $950 million to CBPFs in 18 countries</p>
                                         </div>
                                     </div>
                                 </div>
@@ -263,12 +278,11 @@
                                     <div class="col">
                                         <div class="block-heading">
                                             <div id="anchor-5"></div>
-                                            <h2 class="text-info" id="allocation_heading">ALLOCATIONS<button class="video-btn" data-toggle="modal" data-src="https://embed.fleeq.io/l/s7q22qmqus-53e65u965e" data-target="#myModal"><span class="video-info"><i class="fa fa-play-circle"></i></span>
-                                                </button>
-						</h2>
+                                            <h2 class="text-info" id="allocation_heading">ALLOCATIONS</h2>
                                             <p style="max-width: 1020px;">Funding from CBPFs is directly available to UN agencies, national and international non-governmental organizations (NGOs) and Red Cross/ Red Crescent organizations.</p>
-                                            <p style="max-width: 1020px;">In 2018, CBPFs allocated more than $836 million to 686 partners in 18 countries to support 1,455 critical humanitarian projects. These projects targeted millions of people with healthcare, food aid, clean water, shelter and other life-saving assistance.</p>
-                                            <div id="d3chartcontainerpbialp" data-year="2019" data-partner="total" data-showaverage="true" data-responsive="true" data-lazyload="true"></div>
+                                            <p style="max-width: 1020px;">In 2018, CBPFs allocated more than $836 million to 686 partners in 18 countries to support 1,455 critical humanitarian projects. These projects targeted millions of people with healthcare, food aid, clean water,
+                                                shelter and other life-saving assistance.</p>
+                                            <div id="d3chartcontainerpbialp" data-year="2020" data-partner="total" data-showaverage="true" data-responsive="true" data-lazyload="true"></div>
 
                                         </div>
                                     </div>
@@ -322,14 +336,15 @@
                                         <div class="block-heading">
                                             <div id="anchor-2"></div>
                                             <h2 class="text-info" id="fundingoverview_heading">FUNDING OVERVIEW</h2>
-                                            <p style="max-width:800px;">CBPF receives broad support from United Nations Member States, the private sectors and individuals.&nbsp;Contributions from donors around the world are collected into single, unearmarked funds to support local humanitarian efforts.
+                                            <p style="max-width:800px;">CBPF receives broad support from United Nations Member States, the private sectors and individuals.&nbsp;Contributions from donors around the world are collected into single, unearmarked funds to support local
+                                                humanitarian efforts.
                                                 <br>
                                                 <br>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="d3chartcontainerpbifdc" data-year="2019" data-showmap="false" data-shownames="true" data-regions="all" data-responsive="true" data-lazyload="true"></div>
+                                <div id="d3chartcontainerpbifdc" data-year="2020" data-showmap="false" data-shownames="true" data-regions="all" data-responsive="true" data-lazyload="true"></div>
 
                             </div>
                         </section>
@@ -344,7 +359,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="d3chartcontainerpbiolc" data-title="Cluster Overview" data-showhelp="false" data-cbpf="all" data-year="2019" data-modality="total" data-beneficiaries="targeted" data-responsive="true" data-lazyload="true"></div>
+                                <div id="d3chartcontainerpbiolc" data-title="Cluster Overview" data-showhelp="false" data-cbpf="all" data-year="2020" data-modality="total" data-beneficiaries="targeted" data-responsive="true" data-lazyload="true"></div>
 
                             </div>
                         </section>
@@ -354,23 +369,26 @@
                                     <div class="col">
                                         <div class="block-heading">
                                             <div id="anchor-6"></div>
-                                            <h2 class="text-info" id="clustertrend_heading">AFFECTED PERSONS TRENDS</h2>
+                                            <h2 class="text-info" id="clustertrend_heading">TARGETED AND REACHED PEOPLE</h2>
                                         </div>
-                                        <div id="d3chartcontainerpbiobe" data-title="Affected Persons Overview" data-cbpf="all" data-year="2019" data-responsive="true" data-lazyload="true"></div>
-                                        <p class="text-center" style="font-size:11px; color:#aaa; padding-top: 5px; margin:0"><b>Disclaimer:</b> Figures for people targeted and reached may include double counting as individuals often receive aid from multiple cluster/sectors</p>
+                                        <div id="d3chartcontainerpbiobe" data-title="TARGETED AND REACHED PEOPLE OVERVIEW" data-cbpf="all" data-year="2020" data-responsive="true" data-lazyload="true"></div>
+                                        <p class="text-center" style="font-size:11px; color:#aaa; padding-top: 5px; margin:0">
+                                            <b>Disclaimer (1):</b> Figures for people targeted and reached may include double counting as individuals often receive aid from multiple cluster/sectors<br>
+                                            <b>Disclaimer (2):</b> Figures for people targeted and reached may include double counting as the same people often receive aid from multiple cluster/sectors.
+                                        </p>
 
                                     </div>
                                 </div>
                             </div>
                         </section>
-			<section class="clean-block slider">
+                        <section class="clean-block slider">
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
                                         <div class="block-heading">
                                             <h2 class="text-info" id="gam_heading">GENDER WITH AGE MARKER</h2>
                                         </div>
-                                        <div id="d3chartcontainerpbigam" data-title="Gender with Age Marker (GAM)" data-cbpf="all" data-year="2019" data-display="marker" data-valuetype="budget" data-showmean="false" data-showhelp="false" data-showlink="true" data-responsive="true" data-lazyload="true"></div>
+                                        <div id="d3chartcontainerpbigam" data-title="Gender with Age Marker (GAM)" data-cbpf="all" data-year="2020" data-display="marker" data-valuetype="budget" data-showmean="false" data-showhelp="false" data-showlink="true" data-responsive="true" data-lazyload="true"></div>
 
                                     </div>
                                 </div>
@@ -381,8 +399,8 @@
                 <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-order">
                     <nav id="toc" data-toggle="toc" class="sticky-top" style="float:right; margin-top:55px; background: #ecf6fd; width: 100%;">
                         <h2 data-toc-skip data-toc-text="Contents :">
-						<span class="tbl-content-hd">Contents:</span>
-					</h2>
+                            <span class="tbl-content-hd">Contents:</span>
+                        </h2>
                     </nav>
                 </div>
             </div>
@@ -392,42 +410,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 justify-content-center align-content-center">
-                    <h2 class="text-center" data-toc-skip style="margin: 25px 0; font-weight: 600;">2019 CBPF Donors</h2>
+                    <h2 class="text-center" data-toc-skip style="margin: 25px 0; font-weight: 600;">CBPF Donors</h2>
                     <ul class="donor-flags-list">
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Australia.png" width="30px">Australia</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Azerbaijan.png" width="30px">Azerbaijan</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Belgium.png" width="30px">Belgium</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Canada.png" width="30px">Canada</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Cyprus.png" width="30px">Cyprus</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Czech Republic.png" width="30px">Czech Republic</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Denmark.png" width="30px">Denmark</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Estonia.png" width="30px">Estonia</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/France.png" width="30px">France</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Germany.png" width="30px">Germany</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Iceland.png" width="30px">Iceland</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Ireland.png" width="30px">Ireland</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Italy.png" width="30px">Italy</li>
-                        <li><img src="assets/img/Jersey.png" width="30px">Jersey</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Korea%2C%20Republic%20of.png" width="30px">Korea, Republic of</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Kuwait.png" width="30px">Kuwait</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Lithuania.png" width="30px">Lithuania</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Luxembourg.png" width="30px">Luxembourg</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Malaysia.png" width="30px">Malaysia</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Malta.png" width="30px">Malta</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Monaco.png" width="30px">Monaco</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Netherlands.png" width="30px">Netherlands</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/New Zealand.png" width="30px">New Zealand</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Norway.png" width="30px">Norway</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Philippines.png" width="30px">Philippines</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Poland.png" width="30px">Poland</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Qatar.png" width="30px">Qatar</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Spain.png" width="30px">Spain</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Sweden.png" width="30px">Sweden</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Switzerland.png" width="30px">Switzerland</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Ukraine.png" width="30px">Ukraine</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20Kingdom.png" width="30px">United Kingdom</li>
-                        <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20States.png" width="30px">United States</li>
-                        <div style="clear: both"></div>
+                        <<li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Australia.png" width="30px">Australia</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Azerbaijan.png" width="30px">Azerbaijan</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Belgium.png" width="30px">Belgium</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Canada.png" width="30px">Canada</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Cyprus.png" width="30px">Cyprus</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Czech Republic.png" width="30px">Czech Republic</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Denmark.png" width="30px">Denmark</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Estonia.png" width="30px">Estonia</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/France.png" width="30px">France</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Germany.png" width="30px">Germany</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Iceland.png" width="30px">Iceland</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Ireland.png" width="30px">Ireland</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Italy.png" width="30px">Italy</li>
+                            <li><img src="/assets/img/Jersey.png" width="30px">Jersey</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Korea%2C%20Republic%20of.png" width="30px">Korea, Republic of</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Kuwait.png" width="30px">Kuwait</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Lithuania.png" width="30px">Lithuania</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Luxembourg.png" width="30px">Luxembourg</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Malaysia.png" width="30px">Malaysia</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Malta.png" width="30px">Malta</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Monaco.png" width="30px">Monaco</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Netherlands.png" width="30px">Netherlands</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/New Zealand.png" width="30px">New Zealand</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Norway.png" width="30px">Norway</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Philippines.png" width="30px">Philippines</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Poland.png" width="30px">Poland</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Qatar.png" width="30px">Qatar</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Spain.png" width="30px">Spain</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Sweden.png" width="30px">Sweden</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Switzerland.png" width="30px">Switzerland</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/Ukraine.png" width="30px">Ukraine</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20Kingdom.png" width="30px">United Kingdom</li>
+                            <li><img src="https://www.unocha.org/sites/all/modules/custom/ocha_oct/flags/United%20States.png" width="30px">United States</li>
+                            <div style="clear: both"></div>
                     </ul>
                 </div>
             </div>
@@ -778,7 +796,7 @@
         </svg>
     </div>
     <a href="#" id="scroll" style="display: none;"><span></span></a>
-    !-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -815,6 +833,7 @@
     </script>
     <script type="text/javascript" id="cookieinfo" src="assets/js/cookieinfo.min.js" data-bg="#002856" data-fg="#FFF" data-link="#FFF" data-cookie="CookieInfoScript" data-text-align="left" data-close-text="OK">
     </script>
+
     <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
@@ -841,7 +860,7 @@
             $.getScript("https://cbpfgms.github.io/pbiolc/src/d3chartpbiolc.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac.js", function() {});
-	    $.getScript("https://cbpfgms.github.io/pbigam/src/d3chartpbigam.js", function() {});
+            $.getScript("https://cbpfgms.github.io/pbigam/src/d3chartpbigam.js", function() {});
         } else {
             $.getScript("https://cbpfgms.github.io/pbiclc/src/d3chartpbiclc-stg.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbicli/src/d3chartpbicli-stg.js", function() {});
@@ -851,10 +870,9 @@
             $.getScript("https://cbpfgms.github.io/pbiolc/src/d3chartpbiolc-stg.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe-stg.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac-stg.js", function() {});
-	    $.getScript("https://cbpfgms.github.io/pbigam/src/d3chartpbigam-stg.js", function() {});
+            $.getScript("https://cbpfgms.github.io/pbigam/src/d3chartpbigam-stg.js", function() {});
         }
     </script>
-
 </body>
 
 </html>
