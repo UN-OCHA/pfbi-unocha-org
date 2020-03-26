@@ -1,0 +1,23 @@
+/*Global Classes*/
+body{font-family: "Roboto",sans-serif; color:#231f20; background: #fff; padding: 0; margin: 0;}
+a{cursor: pointer}
+.wrapper{display: block; overflow: auto; margin-top: 109px; padding: 0;}
+.container {width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; box-sizing: border-box;}
+header{background-color: #fff; padding: 28px 0 27px 0; display: block; box-shadow: 0 1px 20px 1px rgba(0,0,0,.1); position: fixed; top: 0; width: 100%; margin: 0; z-index: 1000;} 
+header a img{max-width: 100%; height: auto;}
+footer{background-color: #5392cb; padding: 15px 0; width: 100%; overflow: auto;}
+.covid-19-hd{background-color: #df6269; font-family: "Montserrat",sans-serif; color:#fff; text-align: center; padding: 7px; font-size: 18px; font-weight: 700;}
+.covid-19-hd span{font-weight:300;}
+.covid-19-panel{border:1px solid #eee; padding: 5px 10px 10px 10px;}
+.covid-bi{position: relative; min-height: 450px; margin:25px 0;}
+.nav-links{float:right; font-family: "Montserrat", sans-serif; font-weight: 600; font-size: .8rem; text-transform: uppercase; padding: 20px 0;}
+.nav-links a{text-decoration: none; color: #5392cb; margin-left: 52px;}
+.nav-links a:hover{text-decoration: none; color: #146eb4;}
+.footer-links{float:left; margin-top: 6px;}
+.footer-logo{float:right; line-height: 0;}
+.footer-links a{text-decoration: none; color: #fff; font-size: 11px; font-family: "Arial", sans-serif; margin-right: 30px;}
+.footer-links a:hover{text-decoration: none; color: #333;}
+
+@media (min-width: 1200px){
+.container {max-width: 1100px;}
+}
