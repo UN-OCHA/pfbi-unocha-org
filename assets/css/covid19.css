@@ -13,6 +13,7 @@ footer{background-color: #5392cb; padding: 15px 0; width: 100%; overflow: auto;}
 .covid-19-panel{border:1px solid #eee; padding: 5px 10px 10px 10px;}
 .covid-bi{position: relative; min-height: 450px; margin:25px 0;}
 .nav-links{float:right; font-family: "Montserrat", sans-serif; font-weight: 600; font-size: .8rem; text-transform: uppercase; padding: 20px 0;}
+.intro-txt{font-style: normal; font-family: "Montserrat", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: left; opacity: 0.8;}
 .nav-links a{text-decoration: none; color: #5392cb; margin-left: 52px;}
 .nav-links a:hover{text-decoration: none; color: #146eb4;}
 .footer-links{float:left; margin-top: 6px;}
