@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiclc.css">
     <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiali.css">
     <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbiuac.css">
+    <link rel="stylesheet" type="text/css" href="https://cbpfgms.github.io/css/d3chartstylespbinad.css">
 </head>
 
 <body style="font-family: Montserrat, sans-serif;" data-spy="scroll" data-target="#toc">
@@ -243,6 +244,55 @@
             <div class="row">
                 <div class="col-md-10 col-lg-10 col-xl-10">
                     <main class="page landing-page">
+			<section class="clean-block slider">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="block-heading">
+                                            <div id="anchor-3"></div>
+                                            <h2 class="text-info" id="netfunding_heading">AllOCATION FLOW</h2>
+                                            <p style="max-width: 1020px;">CBPFs allocate funds to UN agencies, national and international NGOs, and Red Cross/ Red Crescent National Societies. In turn, those implementing partners may sub-grant part of their initial grant to a third party. For instance, in 2019, UN agencies sub-granted $9M to international NGOs and $34M to national NGOs.
+                                            </p>
+                                            <p style="max-width: 1020px;">The Allocation flow presents the breakdown of direct grants (blue) and sub-grants (orange) to humanitarian partners.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="d3chartcontainerpbinad" data-title="Allocation Flow (Net Funding)" data-year="2020" data-cbpf="all" data-aggregate="type" data-showhelp="false" data-showlink="true" data-responsive="true" data-lazyload="true"></div>
+
+                            </div>
+                        </section>
+			<section class="clean-block slider">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="block-heading">
+                                            <div id="anchor-5"></div>
+                                            <h2 class="text-info" id="allocation_heading">ALLOCATIONS</h2>
+                                            <p style="max-width: 1020px;">Funding from CBPFs is directly available to UN agencies, national and international non-governmental organizations (NGOs) and Red Cross/ Red Crescent organizations.</p>
+                                            <p style="max-width: 1020px;">In 2018, CBPFs allocated more than $836 million to 686 partners in 18 countries to support 1,455 critical humanitarian projects. These projects targeted millions of people with healthcare, food aid, clean water,
+                                                shelter and other life-saving assistance.</p>
+                                            <div id="d3chartcontainerpbialp" data-title="Allocations by Organization Type" data-year="2020" data-partner="total" data-showaverage="true" data-selectedcbpfs="none" data-netfunding="true" data-showhelp="false" data-showlink="true" data-responsive="true" data-lazyload="true"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="clean-block slider">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="block-heading">
+                                            <div id="anchor-2"></div>
+                                            <h2 class="text-info" id="allocationtimeline_heading">ALLOCATIONS TIMELINE</h2>
+                                        </div>
+                                        <div>
+                                            <div id="d3chartcontainerpbiuac" data-yeartitle="2018" data-offsetstart="3" data-offsetend="6" data-showhelp="false" data-showlink="true" data-responsive="true" data-lazyload="true"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <section class="clean-block slider dark" style="background-color: rgb(255,255,255);">
                             <div class="container">
                                 <div class="row">
@@ -274,63 +324,6 @@
                                 </div>
                                 <div id="d3chartcontainerpbicli" data-showfuture="true" data-responsive="true"></div>
 
-                            </div>
-                        </section>
-                        <section class="clean-block slider">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="block-heading">
-                                            <div id="anchor-5"></div>
-                                            <h2 class="text-info" id="allocation_heading">ALLOCATIONS</h2>
-                                            <p style="max-width: 1020px;">Funding from CBPFs is directly available to UN agencies, national and international non-governmental organizations (NGOs) and Red Cross/ Red Crescent organizations.</p>
-                                            <p style="max-width: 1020px;">In 2018, CBPFs allocated more than $836 million to 686 partners in 18 countries to support 1,455 critical humanitarian projects. These projects targeted millions of people with healthcare, food aid, clean water,
-                                                shelter and other life-saving assistance.</p>
-                                            <div id="d3chartcontainerpbialp" data-year="2020" data-partner="total" data-showaverage="true" data-responsive="true" data-lazyload="true"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="clean-block slider">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="block-heading">
-                                            <div id="anchor-2"></div>
-                                            <h2 class="text-info" id="allocationtrend_heading">ALLOCATION TRENDS</h2>
-                                        </div>
-                                        <div>
-                                            <div id="d3chartcontainerpbiali" data-sortbuttons="total" data-responsive="true" data-lazyload="true"></div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!--<div class="container justify-content-center">
-                                <div class="block-heading" style="margin-top:-40px;"></div>
-                                <div class="row no-gutters align-content-center align-self-center">
-                                    <div class="col">
-                                        <div class="justify-content-center align-content-center" style="max-width:100%;"></div>
-                                    </div>
-                                </div>
-                            </div>-->
-                        </section>
-                        <section class="clean-block slider">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="block-heading">
-                                            <div id="anchor-2"></div>
-                                            <h2 class="text-info" id="allocationtimeline_heading">ALLOCATIONS TIMELINE</h2>
-                                        </div>
-                                        <div>
-                                            <div id="d3chartcontainerpbiuac" data-yeartitle="2018" data-offsetstart="3" data-offsetend="6" data-showhelp="false" data-showlink="true" data-responsive="true" data-lazyload="true"></div>
-                                        </div>
-
-                                    </div>
-                                </div>
                             </div>
                         </section>
                         <section class="clean-block slider">
@@ -865,6 +858,7 @@
             $.getScript("https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbigam/src/d3chartpbigam.js", function() {});
+	    $.getScript("https://cbpfgms.github.io/pbinad/src/d3chartpbinad.js", function() {});
         } else {
             $.getScript("https://cbpfgms.github.io/pbiclc/src/d3chartpbiclc-stg.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbicli/src/d3chartpbicli-stg.js", function() {});
@@ -875,6 +869,7 @@
             $.getScript("https://cbpfgms.github.io/pbiobe/src/d3chartpbiobe-stg.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbiuac/src/d3chartpbiuac-stg.js", function() {});
             $.getScript("https://cbpfgms.github.io/pbigam/src/d3chartpbigam-stg.js", function() {});
+	    $.getScript("https://cbpfgms.github.io/pbinad/src/d3chartpbinad-stg.js", function() {});
         }
     </script>
 </body>
