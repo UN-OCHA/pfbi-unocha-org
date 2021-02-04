@@ -1659,6 +1659,10 @@ h1.country-hd:after {
     padding-bottom: 0
 }
 
+.timer-countdown {display: inline-block; border: 2px solid #ccc; border-radius: 50%; width: 24% !important; padding: 35px; text-align: center; }
+.timer-countdown b{font-size: 2em !important; color: #3289c9; display: block; font-weight: bold !important; line-height: normal;}
+.timer-countdown span{font-size: 1.1em !important; color: #3289c9; display: block; font-weight: 300 !important; line-height: normal;}
+
 .data-table-panel ul.nav-tabs {
     font-size: 14px;
     margin-bottom: 20px
@@ -2005,6 +2009,21 @@ td:nth-of-type(6) {
     font-weight: normal;
     color: #fff;
     opacity: 1;
+}
+
+.modal-dialog-custom{
+	max-width: 600px;
+    margin: 30px auto;
+	font-family: Montserrat,sans-serif;
+}
+
+.modal-dialog-custom .modal-body{
+	padding: 20px;
+    font-size: 0.9em;
+}
+
+.modal-dialog-custom .modal-body a.btn-custom:hover{
+	color:#fff;
 }
 
 .video-info {
